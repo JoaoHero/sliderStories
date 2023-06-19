@@ -49,11 +49,25 @@
     flex: 1;
     display: block;
     height: 3px;
-    background-color: tomato;
+    background-color: rgba(0, 0, 0, 0.4);
     margin: 5px;
     border-radius: 3px;
+    overflow: hidden;
 }
 
-.slide-thumb > span.active {
-    background-color: black;
+.slide-thumb > span.active:before {
+    content: "";
+    display: block;
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    transform: translateX(-100%);
+    animation: thumbAnimation 5s forwards  linear;
+
+}
+
+@keyframes thumbAnimation {
+    to {
+        transform: initial;
+    }
 }
