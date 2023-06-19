@@ -2,12 +2,15 @@
     max-width: 380px;
     margin: 20px auto;
     display: grid;
+    box-shadow: 0 4px 20px 2px rgb(0, 0, 0 .4);
 
 }
 
 .slide-items {
     position: relative;
     grid-area: 1/1;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .slide-nav {
