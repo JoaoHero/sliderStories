@@ -2,7 +2,7 @@ class SlideStories {
     constructor(id) {
         this.slide = document.querySelector(`[data-slide=${id}]`);
         this.active = 0;
-        this.activeSlide(3);
+        this.activeSlide(0);
     }
 
     activeSlide(index) {
