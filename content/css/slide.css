@@ -19,6 +19,8 @@
 }
 
 .slide-nav button {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgb(0, 0, 0);
     opacity: 0;
 }
 
