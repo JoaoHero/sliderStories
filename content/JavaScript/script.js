@@ -35,10 +35,17 @@ class SlideStories {
         prevBtn.addEventListener('click', this.prev);
     }
 
+    addThumbItems() {
+        this.items.forEach(() => (this.thumb.innerHTML += "<span></span>"));
+        this.thumbItems = Array.from(this.thumb.children);
+    }
+
     init() {
         this.next = this.next.bind(this);
         this.prev = this.prev.bind(this);
         this.items = this.slide.querySelectorAll(".slide-items > *");
+        this.thumb = this.slide.querySelector(".slide-thumb");
+        this.addThumbItems();
         this.activeSlide(0);
         this.addNavigation();
     }
