@@ -1,0 +1,21 @@
+.slide {
+    max-width: 380px;
+    margin: 20px auto;
+}
+
+.slide-items {
+    position: relative;
+}
+
+.slide-items > * {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+}
+
+.slide-items > .active {
+    opacity: 1;
+    pointer-events: initial;
+    position: relative;
+}

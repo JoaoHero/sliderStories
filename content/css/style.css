@@ -1,4 +1,4 @@
-/* Código global do nosso projeto, com tamanho de font definida */
-@import url("../global/global.css");
+/* Código principal do nosso projeto */
+@import url("../css/slide.css");
 /* Código de reset do nosso projeto */
 @import url("../global/reset.css");
